@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: var(--p-primary-500);
+    color: white;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    h3 {
+        margin: 0;
+        flex-grow: 1;
+    }
+}
+
+main {
+    padding-top: 60px;
+}
