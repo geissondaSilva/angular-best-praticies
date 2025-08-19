@@ -9,6 +9,8 @@ import { CardModule } from 'primeng/card';
 import { TableModule } from 'primeng/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TagModule } from 'primeng/tag';
+import { SelectModule } from 'primeng/select';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
     imports: [
@@ -27,6 +29,8 @@ import { TagModule } from 'primeng/tag';
         TagModule,
         FormsModule,
         ReactiveFormsModule,
+        SelectModule,
+        ToastModule,
     ],
     exports: [],
     declarations: [HomePageComponent],

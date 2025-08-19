@@ -6,22 +6,30 @@ const INIT_DATA: Todo[] = [
     {
         id: 1,
         name: 'Comprar pão',
-        status: 'pendente'
+        status: 'pendente',
+        category: 'compras',
+        date: new Date(),
     },
     {
         id: 2,
         name: 'Lavar o carro',
         status: 'pendente',
+        category: 'limpeza',
+        date: new Date(),
     },
     {
         id: 3,
         name: 'Estudar Angular',
         status: 'concluida',
+        category: 'estudo',
+        date: new Date(),
     },
     {
         id: 4,
         name: 'Visitar a Sogra',
-        status: 'cancelada'
+        status: 'cancelada',
+        category: 'social',
+        date: new Date(),
     }
 ];
 
