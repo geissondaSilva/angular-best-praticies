@@ -1,0 +1,89 @@
+<form class="container my-4 flex column gap-4" [formGroup]="pessoaForm">
+    <h3 class="m-0">Cadastro de Pessoa</h3>
+    <p-card header="Geral">
+        <div class="flex-grid">
+            <div class="form-field col-12">
+                <div class="label">Nome</div>
+                <div class="input-container">
+                    <input type="text" pInputText formControlName="nome">
+                </div>
+            </div>
+
+            <div class="form-field col-6">
+                <div class="label">E-mail</div>
+                <div class="input-container">
+                    <input type="email" pInputText formControlName="email">
+                </div>
+            </div>
+
+            <div class="form-field col-6">
+                <div class="label">CPF</div>
+                <div class="input-container">
+                    <input type="cpf" pInputText formControlName="cpf">
+                </div>
+            </div>
+
+            <div class="form-field col-12">
+                <div class="label">Origem</div>
+                <div class="input-container">
+                    <p-select styleClass="w-full" formControlName="origem" [options]="origens"></p-select>
+                </div>
+            </div>
+        </div>
+    </p-card>
+
+    <p-card header="Endereço">
+        <div class="flex-grid">
+            <div class="form-field col-6">
+                <div class="label">Cidade</div>
+                <div class="input-container">
+                    <input type="text" pInputText formControlName="cidade">
+                </div>
+            </div>
+
+            <div class="form-field col-6">
+                <div class="label">Bairro</div>
+                <div class="input-container">
+                    <input type="text" pInputText formControlName="bairro">
+                </div>
+            </div>
+
+            <div class="form-field col-12">
+                <div class="label">Rua</div>
+                <div class="input-container">
+                    <input type="text" pInputText formControlName="rua">
+                </div>
+            </div>
+
+            <div class="form-field col-6">
+                <div class="label">Número</div>
+                <div class="input-container">
+                    <input type="text" pInputText formControlName="numero">
+                </div>
+            </div>
+
+            <div class="form-field col-6">
+                <div class="label">Complemento</div>
+                <div class="input-container">
+                    <input type="text" pInputText formControlName="complemento">
+                </div>
+            </div>
+        </div>
+
+    </p-card>
+
+    <p-card header="Contato">
+        <div class="flex-grid">
+            <div class="form-field col-12">
+                <div class="label">Telefone</div>
+                <div class="input-container">
+                    <input type="text" pInputText formControlName="telefone">
+                </div>
+            </div>
+        </div>
+    </p-card>
+
+    <div class="row justify-end">
+        <button pButton label="Salvar" class="p-button-primary"></button>
+    </div>
+</form>

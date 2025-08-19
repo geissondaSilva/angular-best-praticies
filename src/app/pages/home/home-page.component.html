@@ -1,1 +1,29 @@
-<app-todo-list></app-todo-list>
+<div class="container my-4">
+    <p-card header="Todo List">
+        <form [formGroup]="todoForm" (ngSubmit)="addTodo()" class="flex gap-2 items-end">
+            <div class="flex-1">
+                <input class="w-full" pInputText type="text" placeholder="Descreva sua tarefa" formControlName="name">
+            </div>
+            <button pButton [disabled]="todoForm.invalid" type="submit" label="Adicionar"></button>
+        </form>
+        <p-table [value]="todos">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Nome</th>
+                    <th>Status</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-todo>
+                <tr>
+                    <td>{{ todo.name }}</td>
+                    <td>
+                        <p-tag 
+                            [value]="getLabelTag(todo.status)"
+                            [severity]="getSeverityTag(todo.status)">
+                        </p-tag>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </p-card>
+</div>

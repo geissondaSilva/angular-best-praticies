@@ -3,7 +3,12 @@ import { NgModule } from '@angular/core';
 import { HomePageComponent } from './home-page.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { TodoListComponent } from '../../components/todo-list/todo-list.component';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { CardModule } from 'primeng/card';
+import { TableModule } from 'primeng/table';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TagModule } from 'primeng/tag';
 
 @NgModule({
     imports: [
@@ -14,7 +19,14 @@ import { TodoListComponent } from '../../components/todo-list/todo-list.componen
                 component: HomePageComponent,
             }
         ]),
-        TodoListComponent,
+        ButtonModule,
+        InputTextModule,
+        CardModule,
+        TableModule,
+        FormsModule,
+        TagModule,
+        FormsModule,
+        ReactiveFormsModule,
     ],
     exports: [],
     declarations: [HomePageComponent],

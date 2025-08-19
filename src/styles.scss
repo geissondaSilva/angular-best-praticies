@@ -29,6 +29,10 @@ body {
     flex-direction: column;
 }
 
+.justify-end {
+    justify-content: flex-end;
+}
+
 .gap-1 {
     gap: 0.25rem;
 }
@@ -46,6 +50,9 @@ body {
 }
 
 /* Margin top utility classes */
+.m-0 {
+    margin: 0;
+}
 .mt-1 {
     margin-top: 0.25rem;
 }
@@ -153,4 +160,41 @@ body {
 .my-4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {
+    width: calc(100% / 12);
+    padding: 0.5rem;
+}
+
+.col-6 {
+    width: calc(100% / 2);
+    padding: 0.5rem;
+}
+
+.col-12 {
+    width: calc(100% / 1);
+    padding: 0.5rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    .label {
+        font-size: 0.8em;
+        color: rgba($color: #000000, $alpha: 0.78);
+    }
+}
+
+input {
+    width: 100%;
 }
