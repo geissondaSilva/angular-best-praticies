@@ -1,0 +1,26 @@
+<form [formGroup]="todoForm" (ngSubmit)="addTodo()" class="flex-grid">
+    <div class="form-field col-12">
+        <div class="label">Nome</div>
+        <div class="input-container">
+            <input class="w-full" pInputText type="text" placeholder="Descreva sua tarefa" formControlName="name">
+        </div>
+    </div>
+
+    <div class="form-field col-6">
+        <div class="label">Data</div>
+        <div class="input-container">
+            <input class="w-full" pInputText type="date" placeholder="dd/mmm/aaaa" formControlName="date">
+        </div>
+    </div>
+
+    <div class="form-field col-6">
+        <div class="label">Categoria</div>
+        <div class="input-container">
+            <p-select styleClass="w-full" formControlName="category" [options]="categories"></p-select>
+        </div>
+    </div>
+
+    <div class="col-12 flex justify-end">
+        <button pButton [disabled]="todoForm.invalid" type="submit" label="Adicionar"></button>
+    </div>
+</form>

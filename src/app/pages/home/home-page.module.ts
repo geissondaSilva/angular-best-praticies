@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 
-import { HomePageComponent } from './home-page.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
 import { CardModule } from 'primeng/card';
 import { TableModule } from 'primeng/table';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TagModule } from 'primeng/tag';
-import { SelectModule } from 'primeng/select';
 import { ToastModule } from 'primeng/toast';
+import { TodoFormComponent } from '../../components/todo-form/todo-form.component';
+import { HomePageComponent } from './home-page.component';
 
 @NgModule({
     imports: [
@@ -21,16 +18,11 @@ import { ToastModule } from 'primeng/toast';
                 component: HomePageComponent,
             }
         ]),
-        ButtonModule,
-        InputTextModule,
         CardModule,
         TableModule,
-        FormsModule,
         TagModule,
-        FormsModule,
-        ReactiveFormsModule,
-        SelectModule,
         ToastModule,
+        TodoFormComponent,
     ],
     exports: [],
     declarations: [HomePageComponent],
