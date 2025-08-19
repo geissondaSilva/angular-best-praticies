@@ -45,10 +45,7 @@ export class HomePageComponent implements OnInit {
                     detail: 'Não é possível criar tarefas com data retroativa.'
                 })
             } else {
-                this.todos = [
-                    ...this.todos,
-                    { ...value, status: 'pendente' }
-                ];
+                this.todos.push({ ...value, status: 'pendente' });
                 this.todoForm.reset({
                     name: '',
                     category: 'compras',
